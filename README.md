@@ -65,12 +65,14 @@ THEN I am again presented with current and future conditions for that city
 
 
 
-## Completed Application Screenshots 
+## Completed Application Screen Recording
+![WeatherDashboardDemo](./assets/WeatherDashboardDemo.gif)  
 
 ## Link to Github Repo:
 https://github.com/shababrc/Weather-Dashboard
 
 ## Link to Deployed Site:
+https://shababrc.github.io/Weather-Dashboard/
 
 ## Credits
 Credits to the rest of the ucla bootcamp class for help on this assignment. Credit to Bryan and Shawn from the teaching staff. Major credits to tutors Jehyun Jung, Irina Kudosova, and Sheetal Srikumar.
