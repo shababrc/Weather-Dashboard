@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary py-5 text-light mb-5">
+          <h1 class = "text-center mx-auto">Weather Dashboard</h1>
+      </nav>
+      <section class="row d-flex flex-row justify-content-start align-items-baseline px-5">
+        <aside class = "col-3">
+            <h2>Search for a City:</h2>
+            <input id = "search-input" type ="text" class="form-control">
+            <button type="button" id="search-button" class="btn btn-primary w-100 my-3">Search</button>
+            <hr>
+            <div class = "list-group" id = "search-history"></div>
+        </aside> 
+        <main class = "col-lg-9">
+                <div class = "row">
+                  <!--We added paragraph elements in our one day container 
+                  containing spans with ids for city name, weather icon, date, and most importantly Temp, Wind, and Humidity-->  
+                  <section class="card text-dark bg-light mb-3" id="day-container">
+                        <div class="card-header">
+                          <span id = "city-name"></span>  <img width='100px' src='' id= "weather-icon" />
+                        </div>
+                        <div id = "city-weather" class="card-body">
+                          <h5 class="card-title">Today's Date: <span id = "current-date"></span></h5>
+                          <p class="card-text">Temp: <span id="current-temp"> </span> </p>
+                          <p class="card-text">Wind: <span id = "current-wind"></span></p>
+                          <p class="card-text">Humidity: <span id = "current-humidity"></span> </p>
+                        
+                        </div>
+                  </section>
+                </div>
+            <section class="row col-3" id = "five-days-container">
+            </section>
+        </main>
+      </section> 
+      <!-- use day.js to easily format dates -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+        integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js"
+        integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w=="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js"
+        integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg=="
+        crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
